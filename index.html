@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Sorting Algorithm Visualizer</h1>
+
+  <div id="controls">
+    <label for="algoSelect">Algorithm:</label>
+    <select id="algoSelect">
+      <option value="bubble">Bubble Sort</option>
+      <option value="selection">Selection Sort</option>
+    </select>
+
+    <label for="speedSlider">Speed:</label>
+    <input type="range" id="speedSlider" min="1" max="100" value="50" />
+    <span id="speedLabel">50</span>
+
+    <button id="generateBtn">Generate Array</button>
+    <button id="startBtn">Start</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="resetBtn">Reset</button>    
+  </div>
+
+  <div id="barsContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
